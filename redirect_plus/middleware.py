@@ -6,6 +6,7 @@ from django.contrib.sites.models import get_current_site
 from django.core.exceptions import ImproperlyConfigured
 from django import http
 
+from .models import *
 
 class RedirectFallbackMiddleware(object):
 
@@ -44,7 +45,9 @@ class RedirectFallbackMiddleware(object):
         if r is not None:
             if r.new_path == '':
                 return self.response_gone_class()
-                
+            # store hit
+            rhc = RedirectHitCounter(redirect=r)    
+            rhc.save()
             return self.response_redirect_class(r.new_path)
 
         # No redirect was found. Return the response.

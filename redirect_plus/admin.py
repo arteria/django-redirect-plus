@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.contrib.redirects.models import Redirect
-from .models import RedirectLog
+from .models import RedirectHitCounter
 
-class RedirectLogAdmin(admin.ModelAdmin):
+
+class RedirectHitCounterAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(RedirectLog, RedirectLogAdmin)
+admin.site.register(RedirectHitCounter, RedirectHitCounterAdmin)

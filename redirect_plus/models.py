@@ -4,6 +4,10 @@ from django.utils.translation import ugettext_lazy as _
 
 from django.contrib.redirects.models import Redirect
 
-class RedirectLog(models.Model):
+class RedirectHitCounter(models.Model):
     redirect = models.ForeignKey('Redirect')
-    hit = models.DateTimeField(auto_now=False)
+    timestamp = models.DateTimeField(auto_now=False)
+    
+    def __unicode__(self):
+        return "%s was called at %s" % (str(self.redirect), str(self.timestamp))
+        
