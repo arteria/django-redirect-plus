@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 
-ROOT_URLCONF = 'redirct_plus.tests.urls'
+ROOT_URLCONF = 'redirect_plus.tests.urls'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(APP_ROOT, '../app_static')
@@ -51,8 +51,8 @@ EXTERNAL_APPS = [
 ]
 
 INTERNAL_APPS = [
-    'redirct_plus',
-    'redirct_plus.tests.test_app',
+    'redirect_plus',
+    'redirect_plus.tests.test_app',
 ]
 
 INSTALLED_APPS = EXTERNAL_APPS + INTERNAL_APPS

@@ -1,4 +1,4 @@
-"""Tests for the models of the redirct_plus app."""
+"""Tests for the models of the redirect_plus app."""
 from django.test import TestCase
 
 # from .factories import YourModelFactory

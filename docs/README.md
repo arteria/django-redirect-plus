@@ -7,10 +7,10 @@ In order to kickstart your Sphinx documentation, please do the following:
 If you haven't done so already, create a virtual environment for this reusable
 app like so:
 
-    mkvirtualenv -p python2.7 django-redirct-plus
+    mkvirtualenv -p python2.7 django-redirect-plus
     pip install Sphinx
     deactivate
-    workon django-redirct-plus
+    workon django-redirect-plus
     sphinx-quickstart
 
 Answer the questions:
@@ -18,7 +18,7 @@ Answer the questions:
     > Root path for the documentation [.]:
     > Separate source and build directories (y/N) [n]: y
     > Name prefix for templates and static dir [_]:
-    > Project name: Django's built-in redirct app with some extras
+    > Project name: Django's built-in redirect app with some extras
     > Author name(s): arteria GmbH
     > Project version: 0.1
     > Project release [0.1]:

@@ -3,7 +3,7 @@ include LICENSE
 include DESCRIPTION
 include CHANGELOG.txt
 include README.md
-graft redirct_plus
+graft redirect_plus
 global-exclude *.orig *.pyc *.log *.swp
-prune redirct_plus/tests/coverage
-prune redirct_plus/.ropeproject
+prune redirect_plus/tests/coverage
+prune redirect_plus/.ropeproject

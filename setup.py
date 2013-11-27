@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-Python setup file for the redirct_plus app.
+Python setup file for the redirect_plus app.
 
 In order to register your app at pypi.python.org, create an account at
 pypi.python.org and login, then register your new app like so:
@@ -21,7 +21,7 @@ If all looks good, you can make your first release:
     python setup.py sdist upload
 
 For new releases, you need to bump the version number in
-redirct_plus/__init__.py and re-run the above command.
+redirect_plus/__init__.py and re-run the above command.
 
 For more information on creating source distributions, see
 http://docs.python.org/2/distutils/sourcedist.html
@@ -29,7 +29,7 @@ http://docs.python.org/2/distutils/sourcedist.html
 """
 import os
 from setuptools import setup, find_packages
-import redirct_plus as app
+import redirect_plus as app
 
 
 dev_requires = [
@@ -48,16 +48,16 @@ def read(fname):
         return ''
 
 setup(
-    name="django-redirct-plus",
+    name="django-redirect-plus",
     version=app.__version__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     license='The MIT License',
     platforms=['OS Independent'],
-    keywords='django, app, redirct, stats',
+    keywords='django, app, redirect, stats',
     author='arteria GmbH',
     author_email='admin@arteria.ch',
-    url="https://github.com/arteria/django-redirct-plus",
+    url="https://github.com/arteria/django-redirect-plus",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,

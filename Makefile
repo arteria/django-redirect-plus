@@ -1,5 +1,5 @@
 develop: setup-git
-	pip install "file://`pwd`#egg=redirct_plus[dev]"
+	pip install "file://`pwd`#egg=redirect_plus[dev]"
 	pip install -e .
 
 setup-git:
@@ -8,5 +8,5 @@ setup-git:
 
 lint-python:
 	@echo "Linting Python files"
-	PYFLAKES_NODOCTEST=1 flake8 redirct_plus
+	PYFLAKES_NODOCTEST=1 flake8 redirect_plus
 	@echo ""
