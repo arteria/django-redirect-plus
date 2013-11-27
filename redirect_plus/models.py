@@ -6,7 +6,7 @@ from django.contrib.redirects.models import Redirect
 
 class RedirectHitCounter(models.Model):
     redirect = models.ForeignKey(Redirect)
-    timestamp = models.DateTimeField(auto_now=False)
+    timestamp = models.DateTimeField(auto_now=True)
     
     def __unicode__(self):
         return "%s was called at %s" % (str(self.redirect), str(self.timestamp))
