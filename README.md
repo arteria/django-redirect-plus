@@ -1,7 +1,7 @@
-Django's built-in redirect app with some extras.
+Django's built-in redirect app with some extras added.
 ============
 
-Based on Django's built-in redirect app we added some extras. 
+Based on Django's built-in redirect app with some extras added. 
 Starting point for this app was https://github.com/django/django/tree/master/django/contrib/redirects. Now with these extra features:
 
 * Simple hit counter on each redirect rule
