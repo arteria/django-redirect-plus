@@ -43,7 +43,7 @@ Update your ``MIDDLEWARE_CLASSES`` in your project settings
 Don't forget to sync your database
 
 
-    ./manage.py syncdb redirect_plus
+    ./manage.py syncdb 
 
  
 
