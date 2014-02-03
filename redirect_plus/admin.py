@@ -4,7 +4,7 @@ from .models import RedirectHitCounter
 
 
 class RedirectHitCounterAdmin(admin.ModelAdmin):
-    list_filter = ('redirect__old_path', 'redirect__old_path',)
-    search_fields = ['redirect__old_path', 'redirect__old_path',]
+    list_filter = ('redirect__old_path', 'redirect__new_path',)
+    search_fields = ['redirect__old_path', 'redirect__new_path',]
     
 admin.site.register(RedirectHitCounter, RedirectHitCounterAdmin)
