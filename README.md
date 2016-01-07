@@ -36,6 +36,7 @@ Update your ``MIDDLEWARE_CLASSES`` in your project settings
 	    # 'django.contrib.redirects.middleware.RedirectFallbackMiddleware' , # <= comment this 
 		'redirect_plus.middleware.RedirectFallbackMiddleware', # <= replace by /add this middleware
 		...
+        'redirect_plus.middleware.RedirectForceMiddleware', # <= add this to override specific URLs.
 	)
 
   
