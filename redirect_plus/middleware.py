@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 import re
 
 from django.conf import settings
-from django.contrib.redirects.models import Redirec
+from django.contrib.redirects.models import Redirect
 from django.http import HttpResponsePermanentRedirect
 from django.contrib.sites.models import get_current_site
 from django.core.exceptions import ImproperlyConfigured
