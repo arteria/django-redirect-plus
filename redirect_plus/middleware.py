@@ -4,7 +4,11 @@ import re
 from django.conf import settings
 from django.contrib.redirects.models import Redirect
 from django.http import HttpResponsePermanentRedirect
-from django.contrib.sites.models import get_current_site
+try:
+    from django.contrib.sites.models import get_current_site
+except: 
+    from django.contrib.sites.shortcuts import get_current_site
+
 from django.core.exceptions import ImproperlyConfigured
 from django import http
 
